@@ -65,12 +65,8 @@
   * { border-color: var(--color-border); }
   html, body { background-color: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); }
   h1, h2, h3, .font-display { font-family: var(--font-display); }
-  /* User requirement: no animation or transitions anywhere. */
-  *, *::before, *::after {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
-  }
+  /* Shoe imagery stays still (no floating/rotating/zoom); normal UI transitions allowed. */
+  img { animation: none !important; transform: none; }
 }
 
 @utility eyebrow {
